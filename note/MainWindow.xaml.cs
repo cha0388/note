@@ -50,5 +50,30 @@ namespace note
             }
 
         }
+
+        private void NewBtn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void SaveAsBtn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Small_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Medium_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Big_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

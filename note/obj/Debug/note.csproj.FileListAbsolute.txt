@@ -1,0 +1,27 @@
+c:\users\w401_\documents\visual studio 2013\Projects\note\note\bin\Debug\note.exe.config
+c:\users\w401_\documents\visual studio 2013\Projects\note\note\bin\Debug\note.exe
+c:\users\w401_\documents\visual studio 2013\Projects\note\note\bin\Debug\note.pdb
+c:\users\w401_\documents\visual studio 2013\Projects\note\note\obj\Debug\note.csprojResolveAssemblyReference.cache
+c:\users\w401_\documents\visual studio 2013\Projects\note\note\obj\Debug\MainWindow.baml
+c:\users\w401_\documents\visual studio 2013\Projects\note\note\obj\Debug\MainWindow.g.cs
+c:\users\w401_\documents\visual studio 2013\Projects\note\note\obj\Debug\App.g.cs
+c:\users\w401_\documents\visual studio 2013\Projects\note\note\obj\Debug\note_MarkupCompile.cache
+c:\users\w401_\documents\visual studio 2013\Projects\note\note\obj\Debug\note.g.resources
+c:\users\w401_\documents\visual studio 2013\Projects\note\note\obj\Debug\note.Properties.Resources.resources
+c:\users\w401_\documents\visual studio 2013\Projects\note\note\obj\Debug\note.csproj.GenerateResource.Cache
+c:\users\w401_\documents\visual studio 2013\Projects\note\note\obj\Debug\note.exe
+c:\users\w401_\documents\visual studio 2013\Projects\note\note\obj\Debug\note.pdb
+C:\Users\charl\OneDrive\文件\note\note\note\bin\Debug\note.exe.config
+C:\Users\charl\OneDrive\文件\note\note\note\bin\Debug\note.exe
+C:\Users\charl\OneDrive\文件\note\note\note\bin\Debug\note.pdb
+C:\Users\charl\OneDrive\文件\note\note\note\obj\Debug\note.csprojResolveAssemblyReference.cache
+C:\Users\charl\OneDrive\文件\note\note\note\obj\Debug\MainWindow.baml
+C:\Users\charl\OneDrive\文件\note\note\note\obj\Debug\MainWindow.g.cs
+C:\Users\charl\OneDrive\文件\note\note\note\obj\Debug\App.g.cs
+C:\Users\charl\OneDrive\文件\note\note\note\obj\Debug\note_MarkupCompile.cache
+C:\Users\charl\OneDrive\文件\note\note\note\obj\Debug\note.g.resources
+C:\Users\charl\OneDrive\文件\note\note\note\obj\Debug\note.Properties.Resources.resources
+C:\Users\charl\OneDrive\文件\note\note\note\obj\Debug\note.csproj.GenerateResource.Cache
+C:\Users\charl\OneDrive\文件\note\note\note\obj\Debug\note.csproj.CoreCompileInputs.cache
+C:\Users\charl\OneDrive\文件\note\note\note\obj\Debug\note.exe
+C:\Users\charl\OneDrive\文件\note\note\note\obj\Debug\note.pdb
