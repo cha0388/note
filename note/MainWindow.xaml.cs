@@ -141,7 +141,10 @@ namespace note
         private void Dark_MouseDown(object sender, MouseButtonEventArgs e)
         {
             rect.Fill = Brushes.DimGray;
+
+            // 邊框反白
             Dark.Stroke = Brushes.White;
+            // 將Light鍵改回預設的樣子
             Light.Stroke = Brushes.DarkGray;
         }
 
@@ -149,7 +152,10 @@ namespace note
         private void Light_MouseDown(object sender, MouseButtonEventArgs e)
         {
             rect.Fill = Brushes.White;
+
+            // 將Dark鍵改回預設的樣子
             Dark.Stroke = Brushes.DarkGray;
+            // 邊框反白
             Light.Stroke = Brushes.White;
         }
 
