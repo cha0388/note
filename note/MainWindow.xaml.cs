@@ -141,12 +141,16 @@ namespace note
         private void Dark_MouseDown(object sender, MouseButtonEventArgs e)
         {
             rect.Fill = Brushes.DimGray;
+            Dark.Stroke = Brushes.White;
+            Light.Stroke = Brushes.DarkGray;
         }
 
         // 背景變白
         private void Light_MouseDown(object sender, MouseButtonEventArgs e)
         {
             rect.Fill = Brushes.White;
+            Dark.Stroke = Brushes.DarkGray;
+            Light.Stroke = Brushes.White;
         }
 
         // 滑鼠左鍵拖曳可移動視窗

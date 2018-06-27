@@ -22,7 +22,7 @@
             <TextBlock Name="L"  Margin="82 -21 50 0" VerticalAlignment="Bottom" FontSize="20" FontFamily='Times New Roman' Background="Transparent" Foreground="DarkGray" MouseDown="L_MouseDown">A</TextBlock>
 
             <Ellipse Name="Dark" Height="15" Width="15" Margin="0 20 100 0" Fill="DimGray" Stroke="DarkGray" StrokeThickness="2" MouseDown="Dark_MouseDown"></Ellipse>
-            <Ellipse Name="Light" Height="15" Width="15" Margin="0 -15 60 0" Fill="White" Stroke="DarkGray" StrokeThickness="2" MouseDown="Light_MouseDown"></Ellipse>
+            <Ellipse Name="Light" Height="15" Width="15" Margin="0 -15 60 0" Fill="LightGray" Stroke="DarkGray" StrokeThickness="2" MouseDown="Light_MouseDown"></Ellipse>
             
         </StackPanel>
         
