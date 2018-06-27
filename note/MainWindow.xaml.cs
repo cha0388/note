@@ -28,27 +28,19 @@ namespace note
 
         private void SaveBtn_Click(object sender, RoutedEventArgs e)
         {
-            // 產生開啟檔案視窗 OpenFileDialog 
-            Microsoft.Win32.SaveFileDialog dlg = new Microsoft.Win32.SaveFileDialog();
 
-            // 顯示視窗
-            Nullable<bool> result = dlg.ShowDialog();
+            System.IO.File.WriteAllText(filePath, TextArea.Text);
 
-            // 當按下開啟之後的反應 
-            if (result == true)
-            {
-                // 取得檔案路徑 
-                filePath = dlg.FileName;
-
-                // 儲存檔案
-                System.IO.File.WriteAllText(filePath, TextArea.Text);
-            }
+            MessageBox.Show ("保存完畢！");
+            
         }
 
         private void OpenBtn_Click(object sender, RoutedEventArgs e)
         {
 
             Microsoft.Win32.OpenFileDialog dlg = new Microsoft.Win32.OpenFileDialog();
+
+            dlg.Filter = "txt files (*.txt)|*.txt|All files (*.*)|*.*";
 
             // 顯示視窗
             Nullable<bool> result = dlg.ShowDialog();
@@ -68,12 +60,41 @@ namespace note
 
         private void NewBtn_Click(object sender, RoutedEventArgs e)
         {
+           
 
+            string activeDir = @"C:\myDir";
+
+            string newPath = System.IO.Path.Combine(activeDir, "mySubDirOne");
+
+            System.IO.Directory.CreateDirectory(newPath);
+
+            string fileNameOne = DateTime.Now.ToString("yyyyMMddHHmmssffff")+ ".txt";
+
+            string filePathOne = System.IO.Path.Combine(newPath, fileNameOne);  
+
+            System.IO.File.Create(filePathOne);
+
+            filePath = System.IO.Path.Combine(newPath, fileNameOne);
+            
         }
 
         private void SaveAsBtn_Click(object sender, RoutedEventArgs e)
         {
+            Microsoft.Win32.SaveFileDialog dlg = new Microsoft.Win32.SaveFileDialog();
+            dlg.Filter = "txt files (*.txt)|*.txt|All files (*.*)|*.*";
 
+            // 顯示視窗
+            Nullable<bool> result = dlg.ShowDialog();
+
+            // 當按下開啟之後的反應 
+            if (result == true)
+            {
+                // 取得檔案路徑 
+                filePath = dlg.FileName;
+
+                // 儲存檔案
+                System.IO.File.WriteAllText(filePath, TextArea.Text);
+            }
         }
    
         private void S_MouseDown(object sender, MouseButtonEventArgs e)
