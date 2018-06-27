@@ -114,12 +114,12 @@ namespace note
 
         private void Dark_MouseDown(object sender, MouseButtonEventArgs e)
         {
-
+            rect.Fill = Brushes.DimGray;
         }
 
         private void Light_MouseDown(object sender, MouseButtonEventArgs e)
         {
-
+            rect.Fill = Brushes.White;
         }
     }
 }
