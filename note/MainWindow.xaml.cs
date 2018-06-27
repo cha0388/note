@@ -60,7 +60,7 @@ namespace note
 
         private void NewBtn_Click(object sender, RoutedEventArgs e)
         {
-           
+            TextArea.Text = "";
 
             string activeDir = @"C:\myDir";
 
@@ -99,17 +99,17 @@ namespace note
    
         private void S_MouseDown(object sender, MouseButtonEventArgs e)
         {
-
+            TextArea.FontSize = 12;
         }
 
         private void M_MouseDown(object sender, MouseButtonEventArgs e)
         {
-
+            TextArea.FontSize = 16;
         }
 
         private void L_MouseDown(object sender, MouseButtonEventArgs e)
         {
-
+            TextArea.FontSize = 20;
         }
 
         private void Dark_MouseDown(object sender, MouseButtonEventArgs e)
