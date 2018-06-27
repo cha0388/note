@@ -20,6 +20,7 @@ namespace note
     /// </summary>
     public partial class MainWindow : Window
     {
+        string filePath = "";
         public MainWindow()
         {
             InitializeComponent();
@@ -27,26 +28,40 @@ namespace note
 
         private void SaveBtn_Click(object sender, RoutedEventArgs e)
         {
-            Microsoft.Win32.SaveFileDialog dig = new Microsoft.Win32.SaveFileDialog();
+            // 產生開啟檔案視窗 OpenFileDialog 
+            Microsoft.Win32.SaveFileDialog dlg = new Microsoft.Win32.SaveFileDialog();
 
-            Nullable<bool> result = dig.ShowDialog();
+            // 顯示視窗
+            Nullable<bool> result = dlg.ShowDialog();
 
-            if(result == true)
+            // 當按下開啟之後的反應 
+            if (result == true)
             {
-                System.IO.File.WriteAllText(dig.FileName, Textarea.Text);
+                // 取得檔案路徑 
+                filePath = dlg.FileName;
+
+                // 儲存檔案
+                System.IO.File.WriteAllText(filePath, TextArea.Text);
             }
-            
         }
 
         private void OpenBtn_Click(object sender, RoutedEventArgs e)
         {
-            Microsoft.Win32.OpenFileDialog dig = new Microsoft.Win32.OpenFileDialog();
 
-            Nullable<bool> result = dig.ShowDialog();
+            Microsoft.Win32.OpenFileDialog dlg = new Microsoft.Win32.OpenFileDialog();
 
+            // 顯示視窗
+            Nullable<bool> result = dlg.ShowDialog();
+
+            // 當按下開啟之後的反應 
             if (result == true)
             {
-                System.IO.File.WriteAllText(dig.FileName, Textarea.Text);
+                // 取得檔案路徑 
+                filePath = dlg.FileName;
+
+                // 讀取檔案
+                TextArea.Text = System.IO.File.ReadAllText(filePath);
+
             }
 
         }
@@ -60,18 +75,28 @@ namespace note
         {
 
         }
-
-        private void Small_Click(object sender, RoutedEventArgs e)
+   
+        private void S_MouseDown(object sender, MouseButtonEventArgs e)
         {
 
         }
 
-        private void Medium_Click(object sender, RoutedEventArgs e)
+        private void M_MouseDown(object sender, MouseButtonEventArgs e)
         {
 
         }
 
-        private void Big_Click(object sender, RoutedEventArgs e)
+        private void L_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+
+        }
+
+        private void Dark_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+
+        }
+
+        private void Light_MouseDown(object sender, MouseButtonEventArgs e)
         {
 
         }
